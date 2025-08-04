@@ -63,4 +63,31 @@ let con = (data) => {
 }
 
 console.log(con(numbers));
+console.log("--------------------")
+
+// 🔹 Exercise 3 (repeat):
+// js
+// Copy
+// Edit
+// let words = ["cat", "house", "sun", "elephant", "pen", "notebook"];
+// Task:
+// Make a new array that only includes the words longer than 4 letters.
+
+// 💡 Try using .filter() — but if you want to use a loop, that’s okay too.
+
+let words = ["country", "cat", "house", "sun", "elephant", "pen", "notebook"];
+
+const moon = (data) =>{
+    let item = [...(data + "")];
+    let arr1 = []
+    // console.log(item);
+    if(item.length > 3){
+        // console.log(item);
+        return arr1.push(item);
+    }
+}
+
+const check = words.filter(moon);
+
+console.log("Result : [" + check + "]");
 
