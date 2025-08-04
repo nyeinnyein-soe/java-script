@@ -91,3 +91,33 @@ const check = words.filter(moon);
 
 console.log("Result : [" + check + "]");
 
+// Another Way (Filter function)
+
+let word = ["country", "cat", "house", "sun", "elephant", "pen", "notebook"]
+
+const longerthan4 = (data) =>{
+    return data.length > 3 ;
+}
+
+const result1 = word.filter(longerthan4);
+console.log(result1);
+
+// 🔹 Exercise 4: Filter Words Starting with “c”
+// js
+// Copy
+// Edit
+// let words = ["country", "cat", "house", "sun", "elephant", "pen", "notebook", "camera"];
+// Your Task:
+// 👉 Create a new array that includes only the words that start with the letter "c".
+
+let words1 = ["country", "cat", "house", "sun", "elephant", "pen", "notebook", "camera"];
+
+const aespa = (word) =>{
+    // return word[0] === "c"
+    return word.startsWith("c")
+}
+const res = words1.filter(aespa);
+console.log(res)
+
+// const res = words1.filter(word => word.startsWith("c"));
+// console.log(res)
