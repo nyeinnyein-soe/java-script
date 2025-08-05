@@ -121,3 +121,15 @@ console.log(res)
 
 // const res = words1.filter(word => word.startsWith("c"));
 // console.log(res)
+
+let number = [1,2,3,4,5,6,7];
+
+let evenodd = (number) =>{
+    let arr = [];
+    if(number % 2 === 0){
+        return arr.push(number);
+    }
+}
+
+let r = number.filter(evenodd);
+console.log("Even Number : [" + r + "]")
