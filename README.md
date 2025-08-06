@@ -18,5 +18,5 @@
 
 ## Branches
 - main
-- challenges
-- exercises
+- challenge
+- exercise
