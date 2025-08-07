@@ -153,3 +153,25 @@ let square = close.map((n)=>{
 
 console.log("[" + square + "]");
 
+
+// 🔹 Exercise 7: Add "!" to every word
+// js
+// Copy
+// Edit
+// let words = ["hello", "world", "javascript", "map"];
+// Your Task:
+// Use .map() to create a new array like this:
+
+// js
+// Copy
+// Edit
+// ["hello!", "world!", "javascript!", "map!"]
+
+let unforgettable = ["hello", "world", "javascript", "map"];
+
+let winplish = unforgettable.map((n)=>{
+    return n + "!";
+})
+
+console.log(winplish)
+
