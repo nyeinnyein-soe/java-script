@@ -175,3 +175,19 @@ let winplish = unforgettable.map((n)=>{
 
 console.log(winplish)
 
+// 🔹 Exercise 8: Convert Numbers to Strings
+// js
+// Copy
+// Edit
+// let nums = [1, 2, 3, 4, 5];
+// Your Task:
+// Use .map() to return a new array where each number is converted to a string.
+
+let nums = [1, 2, 3, 4, 5];
+// console.log(nums)
+
+let convert = nums.map((n)=>{
+    return n.toString();
+})
+
+console.log(convert);
