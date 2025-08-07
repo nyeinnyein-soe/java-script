@@ -133,3 +133,23 @@ let evenodd = (number) =>{
 
 let r = number.filter(evenodd);
 console.log("Even Number : [" + r + "]")
+
+// Your Task:
+// Use .map() to return a new array where each number is squared.
+
+// Expected result:
+
+// js
+// Copy
+// Edit
+// [4, 16, 36, 64]
+
+let close = [2,4,6,8];
+
+let square = close.map((n)=>{
+    let result = n * n;
+    return result;
+})
+
+console.log("[" + square + "]");
+
