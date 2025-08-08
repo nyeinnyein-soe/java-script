@@ -191,3 +191,32 @@ let convert = nums.map((n)=>{
 })
 
 console.log(convert);
+
+
+// 🔹 Exercise 9: Capitalize the First Letter of Each Word
+// js
+// Copy
+// Edit
+// let words = ["apple", "banana", "cherry", "date"];
+// Your Task:
+// Use .map() to return a new array where each word has its first letter capitalized, like this:
+
+// js
+// Copy
+// Edit
+// ["Apple", "Banana", "Cherry", "Date"]
+
+let bill = ["apple", "banana", "cherry", "date"];
+
+let cap = bill.map((n)=>{
+    // console.log(n)\
+    let a;
+    if(n.charAt(0)){
+        a =  n.charAt(0).toUpperCase();
+        a += n.slice(1)
+    }
+    return a;
+    
+})
+
+console.log(cap)
