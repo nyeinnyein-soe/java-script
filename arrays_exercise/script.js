@@ -210,12 +210,7 @@ let bill = ["apple", "banana", "cherry", "date"];
 
 let cap = bill.map((n)=>{
     // console.log(n)\
-    let a;
-    if(n.charAt(0)){
-        a =  n.charAt(0).toUpperCase();
-        a += n.slice(1)
-    }
-    return a;
+    return a = n.charAt(0).toUpperCase() + n.slice(1);
     
 })
 
