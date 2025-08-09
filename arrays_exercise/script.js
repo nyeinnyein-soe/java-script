@@ -80,7 +80,7 @@ let words = ["country", "cat", "house", "sun", "elephant", "pen", "notebook"];
 const moon = (data) =>{
     let item = [...(data + "")];
     let arr1 = []
-    // console.log(item);
+    console.log(item);
     if(item.length > 3){
         // console.log(item);
         return arr1.push(item);
@@ -215,3 +215,47 @@ let cap = bill.map((n)=>{
 })
 
 console.log(cap)
+
+// 🔸 Exercise 10: Capitalize Only Words Longer Than 5 Letters
+// js
+// Copy
+// Edit
+// let words = ["hi", "banana", "sun", "elephant", "cat", "notebook"];
+// Your Task:
+
+// Filter the words to keep only those longer than 5 letters.
+
+// Then map them to a new array where each word is capitalized (first letter uppercase, rest the same).
+
+// ✅ Expected Result:
+// js
+// Copy
+// Edit
+// ["Banana", "Elephant", "Notebook"]
+
+let subway = ["hi", "banana", "sun", "elephant", "cat", "notebook"];
+
+// let sub = (data) =>{
+//     let arr = [];
+//     let item = [...(data + "")];
+//     let len = item.length
+//     if(len > 5){
+//         return arr.push(item)
+//     }
+// }
+
+// console.log(subway.filter(sub))
+
+let way = subway.map((x)=>{
+    let walk = x.charAt(0).toUpperCase() + x.slice(1);
+    let len = [...(x + "")].length;
+    if(len > 5){
+        return walk;    
+    }
+})
+
+let pepsi = way.filter((item)=>{
+    return item !== undefined
+});
+
+console.log(pepsi)
