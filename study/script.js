@@ -83,3 +83,65 @@ console.log(three(5,function(x){
     return x * 2;
 })
 );
+
+let bird = {
+    color: "Green", 
+    leg: 2
+};
+
+bird.name = "Shwe Gal"
+console.log(bird)
+console.log(bird.name)
+
+bird.color = "Blue"
+console.log(bird)
+
+// Array of Objects (Example)
+
+let user = [
+    {name : "Sabrina Carpenter", age : 26},
+    {name : "Olivia Rodrigo", age : 22}
+]
+
+console.log(user[0].name)
+console.log(user[0].age)
+
+// Mini activity
+// Can you make an array named books with 3 objects,
+// each having title and author properties?
+// After that, try printing the title of the second book.
+
+let books = [
+    {title : "Absalom, Absalom!", author : "William Faulkner"},
+    {title : "An Acceptable Time", author : "Madeleine L'Engle"},
+    {title : "Alien Corn (play)", author : "Sidney Howard"}
+]
+
+console.log(`The Title of the second book is "${books[1].title}"`)
+
+//Looping through an array of objects
+
+for(let book of books){
+    console.log(`${book.title} - by ${book.author}`)
+}
+
+// Goal:
+// We want to print something like:
+
+// less
+// Copy
+// Edit
+// Book #1: Absalom, Absalom!
+// Book #2: An Acceptable Time
+// Book #3: Alien Corn (play)
+
+let smile = (data) =>{
+    let nai = data.reduce((total,current,index)=>{
+        // console.log(index + 1)
+        // console.log(current.title)
+        console.log(`Book #${index + 1}: ${current.title}`)
+    },0)
+    return nai;
+}
+
+console.log(smile(books))
