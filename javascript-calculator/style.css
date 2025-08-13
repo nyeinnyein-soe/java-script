@@ -17,6 +17,8 @@ body{
     background-color: rgb(176, 205, 176);
     font-size: 40px;
     text-align: end;
+    overflow: hidden;
+    /* overflow: scroll; */
 }
 
 .button{
