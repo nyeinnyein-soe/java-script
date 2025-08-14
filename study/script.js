@@ -145,3 +145,69 @@ let smile = (data) =>{
 }
 
 console.log(smile(books))
+
+// Exercise 1 — Selecting by ID
+// In your HTML, add:
+
+// <p id="intro">Hello world!</p>
+
+
+// Then in JavaScript:
+
+// let paragraph = document.querySelector("#intro");
+// console.log(paragraph.textContent);
+
+
+// Question for you:
+// If I changed the <p> tag’s ID to "greeting", what would you need to change in the JS code so it still works?
+
+// let heavy = document.querySelector('#intro');
+// console.log(heavy.textContent)
+
+let happen = document.querySelector('#greeting');
+console.log(happen.textContent)
+
+
+
+// Exercise 2 — Selecting by Class
+// HTML:
+
+// <p class="highlight">This is highlighted text.</p>
+
+
+// JS:
+
+// let highlight = document.querySelector(".highlight");
+// console.log(highlight.textContent);
+
+
+// Try adding two <p class="highlight"> elements. What will querySelector print?
+
+    let calling = document.querySelectorAll('.highlight');
+
+    calling.forEach(call => console.log(call.textContent))
+// console.log(calling.textContent)
+
+// Exercise 3 — Nested Selection
+// HTML:
+
+// <div class="card">
+//   <h2>Title</h2>
+//   <p>Some content</p>
+// </div>
+
+
+// JS:
+
+// let cardTitle = document.querySelector(".card h2");
+// console.log(cardTitle.textContent);
+
+
+// Question:
+// How would you change the selector to grab the <p> inside the .card?
+
+let cardTitle = document.querySelector(".card h2");
+console.log(cardTitle.textContent)
+
+let verynice = document.querySelector(".card p");
+console.log(verynice.textContent)
